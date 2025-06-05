@@ -16,7 +16,8 @@ ul, li {
 }
 
 header {
-    box-shadow: 0px 2px 6px 0px rgba(208, 208, 208, 0.25);
+    width: 100%;
+    box-shadow: 0px 2px 6px 0px rgba(172, 172, 172, 0.25);
 }
 
 header > div > * {
@@ -38,9 +39,10 @@ header > div > * {
 
 .headerContainer > div > div > a {
     margin-left: 50px;
+    color: #333;
 }
 
-.logoContainer {
+.logoContainer > a {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -63,7 +65,7 @@ header > div > * {
     background-color: #64A0D6;
     padding: 12px 12px;
     margin-left: 30px !important;
-    color: white;
+    color: white !important;
 }
 
 .freeStart:hover {
@@ -72,7 +74,14 @@ header > div > * {
 }
 
 main {
-    
+    width: 100%;
+    padding: 50px 0;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 main > div > * {
@@ -80,11 +89,109 @@ main > div > * {
     margin: 0 auto;
 }
 
-.mainContainer > div {
+.character {
+    width: 660px;
+    object-fit: cover;
+}
+
+.mainContent {
     display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    margin-top: 40px;
+}
+
+.title {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 30px 0;
+    padding: 20px 0;
+    animation: "fadeInUp";
+    animation-duration: 2s;
+}
+
+.subtitle {
+    font-size: 26px;
+    text-align: right;
+    padding: 4px 0;
+}
+
+.subtitle > span {
+    font-family: "Megrim", system-ui;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.first {
+    display: none;
+}
+
+.second {
+    display: none;
+}
+
+.third {
+    display: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #202936;
+    padding: 40px 0;
+}
+
+footer > div > * {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.footerLogo > h3 {
+    color: white;
+    font-family: "Megrim", system-ui;
+    font-size: 22px;
+}
+
+.footerLogo > img {
+    width: 50px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
-.character {
-    width: 600px;
+.footer-links > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
 }
+
+.footer-links > div:not(:first-child) {
+    margin-top: 16px;
+}
+
+.footer-links p, a, h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.footer-bottom > p {
+    color: #bbb;
+    margin-top: 60px;
+    font-weight: 300;
+}
+

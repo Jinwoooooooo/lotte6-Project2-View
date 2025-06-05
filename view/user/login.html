@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LinkON 로그인</title>
+    <link rel="stylesheet" href="/style/user/login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-box">
+        <img
+          src="/images/user/2조 로고 아이콘.png"
+          alt="LinkON 로고"
+          class="logo"
+        />
+        <h1>LinkON</h1>
+
+        <form>
+          <div class="input-group">
+            <input type="text" id="email" placeholder="아이디" />
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="password" placeholder="비밀번호" />
+          </div>
+
+          <div class="options">
+            <label><input type="checkbox" /> 자동로그인</label>
+            <div class="find-links">
+              <a href="/view/user/findId.html">아이디찾기</a> /
+              <a href="/view/user/findPassword.html">비밀번호 찾기</a>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="login-btn"
+            onclick="location.href='/view/myPage/myPage.html'"
+          >
+            로그인
+          </button>
+        </form>
+
+        <div class="divider">또는</div>
+
+        <div class="social-login">
+          <button class="google">G 구글</button>
+          <button class="naver">네이버</button>
+          <button class="kakao">카카오톡</button>
+        </div>
+
+        <div class="signup">
+          <a href="/view/user/terms.html">회원가입</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
